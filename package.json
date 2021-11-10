@@ -1,0 +1,23 @@
+{
+  "name": "gravatarregistry",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "compile": "truffle compile",
+    "dev": "truffle migrate --f 2 --network development",
+    "prod": "truffle migrate --f 2 --network testnet",
+    "verify": "truffle run verify GravatarRegistry --network testnet"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.6.0",
+    "truffle-plugin-verify": "^0.5.17"
+  }
+}
