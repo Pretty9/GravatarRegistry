@@ -8,8 +8,8 @@ document.querySelector('#load').onclick = () => {
 
     document.querySelector('#status').innerHTML = 'loading...';
     const interval = setInterval(() => {
-        document.querySelector('#time').innerHTML = `${cnt}s`;
         cnt += 1;
+        document.querySelector('#time').innerHTML = `${cnt}s`;
     }, 1000);
 
     const address = document.querySelector('#address').value;
